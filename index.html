@@ -737,8 +737,17 @@
               <input type="text" name="emailjs_email" id="emailjs_email" class="form-control"  placeholder="Correo electrónico" required>
             </div>
           </div>
-          <div class="form-group mt-3">
-            <input type="text" name="emailjs_subject" id="emailjs_subject" class="form-control"  placeholder="Servicio a solicitar" required>
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">Servicio de</label>
+            <select class="form-select" name="emailjs_subject" id="emailjs_subject" class="form-control">
+              <option selected>Seleccione</option>
+              <option value="Cámaras de Seguridad">Cámaras de Seguridad</option>
+              <option value="Red">Red</option>
+              <option value="Cómputo">Cómputo</option>
+              <option value="Página Web">Página Web</option>
+              <option value="Audio Visual">Audio Visual</option>
+              <option value="Desarrollo 3D">Desarrollo 3D</option>
+            </select>
           </div>
           <div class="form-group mt-3">
             <textarea class="form-control" name="emailjs_message" id="emailjs_message" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
