@@ -13,11 +13,16 @@ document.getElementById("form").addEventListener("submit", function (event) {
     () => {
       btn.value = "Send Email";
       alert("Correo enviado");
-      document.getElementById(emailjs_name).value='';
+      limpiar();
     },
     (err) => {
       btn.value = "Send Email";
       alert(JSON.stringify(err));
     }
   );
+  function limpiar(){
+    console.log('Correo enviado');
+    form.reset();
+    return false;
+  }
 });
